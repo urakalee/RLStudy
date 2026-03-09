@@ -19,7 +19,7 @@
 
 ## 下一步
 
-- [x] **阶段一**：`phase1_gomoku/02_q_learning.ipynb` 完成并运行
+- [ ] **阶段一**：`phase1_gomoku/02_q_learning.ipynb`（已创建，待运行）
   - DQN Agent（QNetwork CNN + ReplayBuffer + Target Network）
   - 5×5 棋盘（3连赢）自我对弈，训练 3000 局
   - ε-greedy 探索（1.0 → 0.05 线性衰减）
