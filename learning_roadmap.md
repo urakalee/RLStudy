@@ -22,9 +22,10 @@
 - 奖励设计：赢+1，输-1，平0
 
 **Hour 2：最简策略训练**
-- 用 Q-Learning 或 policy gradient 跑通训练循环
+- 用 DQN（神经网络近似 Q 函数）跑通训练循环
 - Self-play：模型和自己对战
 - 理解 exploration（epsilon-greedy）
+- 关键组件：Replay Buffer + Target Network
 
 **Hour 3-4：理解 & 调试**
 - 观察训练曲线（reward 是否在上升）
