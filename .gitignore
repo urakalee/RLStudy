@@ -1,0 +1,8 @@
+
+# Python
+__pycache__/
+*.pyc
+
+# 训练结果（checkpoints 目录不提交）
+phase1_gomoku/checkpoints/
+
