@@ -19,3 +19,21 @@ python tools/fix_notebook_source.py phase1_gomoku/02_q_learning.ipynb
 git add phase1_gomoku/02_q_learning.ipynb
 git commit ...
 ```
+
+## 运行环境
+
+项目使用 conda 环境 `rl_study`（Python 3.11）。
+
+```bash
+conda activate rl_study
+```
+
+## 运行测试
+
+```bash
+conda activate rl_study
+cd phase1_gomoku
+python -m pytest tests/ -v
+```
+
+依赖（已安装在 rl_study 环境）：pytest
