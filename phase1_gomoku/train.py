@@ -3,7 +3,7 @@
 DQN 五子棋训练程序
 
 用法：
-  python train.py train                        # 训练（3000 局，保存到 checkpoints/）
+  python train.py train                        # 训练（20000 局，保存到 checkpoints/）
   python train.py train --episodes 5000        # 自定义局数
   python train.py train --resume <run_id>      # 接着某次训练继续跑
   python train.py list                         # 列出所有保存的训练结果
@@ -611,7 +611,7 @@ def main():
 
     # train
     p_train = sub.add_parser("train", help="训练 DQN Agent")
-    p_train.add_argument("--episodes",     type=int, default=3000)
+    p_train.add_argument("--episodes",     type=int, default=20000)
     p_train.add_argument("--board-size",   type=int, default=5, dest="board_size")
     p_train.add_argument("--win-count",    type=int, default=3, dest="win_count")
     p_train.add_argument("--log-interval", type=int, default=500, dest="log_interval")
