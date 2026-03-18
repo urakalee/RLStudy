@@ -611,10 +611,10 @@ def main():
 
     # train
     p_train = sub.add_parser("train", help="训练 DQN Agent")
-    p_train.add_argument("--episodes",     type=int, default=20000)
+    p_train.add_argument("--episodes",     type=int, default=10000)
     p_train.add_argument("--board-size",   type=int, default=5, dest="board_size")
     p_train.add_argument("--win-count",    type=int, default=3, dest="win_count")
-    p_train.add_argument("--log-interval", type=int, default=500, dest="log_interval")
+    p_train.add_argument("--log-interval", type=int, default=1000, dest="log_interval")
     p_train.add_argument("--resume",       type=str, default=None, help="接着某次 run_id 继续训练")
 
     # list
