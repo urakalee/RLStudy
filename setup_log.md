@@ -82,10 +82,14 @@ http://192.168.31.163:8888/lab?token=xxxxxx...
 
 ## 已安装包版本
 
-| 包 | 版本 |
-|---|---|
-| Python | 3.11.15 |
-| jupyterlab | 4.5.5 |
-| torch | 2.10.0 |
-| numpy | 2.4.2 |
-| matplotlib | 3.10.8 |
+| 包 | 版本 | 用途 |
+|---|---|---|
+| Python | 3.11.15 | |
+| jupyterlab | 4.5.5 | |
+| torch | 2.10.0 | MPS 可用 |
+| numpy | 2.4.2 | |
+| matplotlib | 3.10.8 | |
+| transformers | 5.3.0 | phase2 模型加载 |
+| trl | 0.29.1 | phase2 GRPO 训练 |
+| datasets | 4.8.3 | phase2 数据集 |
+| accelerate | 1.13.0 | trl 依赖 |

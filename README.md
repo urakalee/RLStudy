@@ -7,11 +7,22 @@
 ```
 rl_study/
 ├── README.md
-├── learning_roadmap.md       # 详细学习路线规划
-├── phase1_gomoku/            # 阶段一：五子棋 RL（Hour 1-4）
-└── phase2_tooluse/           # 阶段二：RLVR Tool-Use（Hour 5-10）
-    ├── rewards/              # Reward 函数
-    └── tools/                # 工具实现（计算器、代码执行器等）
+├── learning_roadmap.md           # 详细学习路线规划
+├── concepts.md                   # RL 核心概念速读
+├── setup_log.md                  # 环境搭建记录
+├── progress.md                   # 当前进度
+├── tools/
+│   └── fix_notebook_source.py
+├── phase1_gomoku/                # 阶段一：五子棋 RL（Hour 1-4）
+│   ├── 01_gomoku_env.ipynb       # 五子棋环境 + 随机对战
+│   ├── 02_q_learning.ipynb       # DQN 训练
+│   ├── dqn/                      # DQN 模块
+│   └── checkpoints/              # 训练检查点
+└── phase2_tooluse/               # 阶段二：RLVR Tool-Use（Hour 5-10）
+    ├── 01_setup_verify.ipynb     # 模型推理验证
+    ├── 02_reward_design.ipynb    # Reward 函数设计
+    ├── 03_grpo_training.ipynb    # GRPO 训练（核心）
+    └── 04_eval_analysis.ipynb    # 评估对比
 ```
 
 ## 两阶段目标
