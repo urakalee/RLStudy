@@ -33,15 +33,15 @@
   - Baseline（未训练）：3 题全错，模型把示例文字当表达式，`<think>` 标签缺失
   - **关键观察**：格式不稳定（tool_call 填示例而非真实表达式）→ RLVR 要解决的核心问题
 
-- [ ] **阶段二**：`phase2_tooluse/02_reward_design.ipynb`
-  - 格式奖励：是否正确调用了工具
-  - 结果奖励：最终答案是否正确
-  - 参考 DeepSeek-R1 的 reward shaping 思路
+- [x] **阶段二**：`phase2_tooluse/02_reward_design.ipynb`
+  - 格式奖励（三标签各 0.1）/ 工具可执行奖励（0.2）/ 答案正确奖励（1.0）
+  - 防 reward hacking：无 tool_call 标签则答案分为 0
 
-- [ ] **阶段二**：`phase2_tooluse/03_grpo_training.ipynb`
-  - 使用 TRL GRPOTrainer
-  - 数据集：GSM8K 子集
-  - 记录训练曲线：格式正确率 / 答案正确率
+- [x] **阶段二**：`phase2_tooluse/03_grpo_training.ipynb`
+  - TRL GRPOTrainer + LoRA（r=8，Q/V proj，417K 可训练参数）
+  - 关键修复：System Prompt 去掉 placeholder，加 few-shot 示例
+  - 修复后 step 5 reward=0.34，step 10 reward=0.58（旧版 300 步才到 0.265）
+  - 当前正在训练（300 步）
 
 - [ ] **阶段二**：`phase2_tooluse/04_eval_analysis.ipynb`
   - 对比 baseline vs RLVR 效果

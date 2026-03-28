@@ -2,7 +2,7 @@
 
 ## 约束条件
 - 总时间：10小时
-- 硬件：M1 Ultra 64G（主力）/ M4 16G（备用）
+- 硬件：M4 16G
 - 起点：无 RL 基础
 - 终点兴趣：tool use
 
@@ -28,9 +28,9 @@
 - 关键组件：Replay Buffer + Target Network
 
 **Hour 3-4：理解 & 调试**
-- 观察训练曲线（reward 是否在上升）
-- 理解过拟合/欠拟合在 RL 中的表现
-- 阅读 Spinning Up 对应章节加深理解
+- 观察训练曲线（实际观察了胜率/Loss/ε 衰减，未单独看 reward 曲线）
+- 理解过拟合/欠拟合在 RL 中的表现（未覆盖，跳过）
+- 阅读 Spinning Up 对应章节加深理解（未覆盖，跳过）
 
 ### 核心概念清单（完成后应能解释）
 - [ ] Markov Decision Process (MDP)
@@ -44,7 +44,7 @@
 ## 阶段二：RLVR Tool-Use（6-8小时）
 
 ### 目标
-训练 Qwen2.5 小模型学会在回答问题时正确调用工具。
+训练 Qwen 小模型学会在回答问题时正确调用工具。
 
 ### 任务设计
 
@@ -66,8 +66,7 @@
 ```
 
 **模型选择**
-- 首选：Qwen2.5-1.5B-Instruct（M4 16G 也能跑）
-- 升级：Qwen2.5-3B-Instruct（M1 Ultra 跑更快）
+- Qwen3.5-2B（1.88B 参数，ModelScope 本地加载，mps:0）
 
 ### 工程路线
 
@@ -87,7 +86,7 @@
 - 记录训练曲线：格式正确率 / 答案正确率
 
 **Hour 7-8：评估 & 分析**
-- 对比 SFT baseline vs RLVR
+- 对比未训练 baseline vs RLVR
 - 分析模型学到了什么（case study）
 - 尝试调整 reward 权重观察效果
 

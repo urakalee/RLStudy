@@ -30,6 +30,11 @@ rl_study/
 | 阶段 | 时间 | 目标 |
 |---|---|---|
 | 五子棋 | 3-4h | 建立 RL 核心概念：MDP/Policy/Value/Reward |
-| RLVR Tool-Use | 6-8h | 用 GRPO 训练 Qwen2.5 学会调用工具 |
+| RLVR Tool-Use | 6-8h | 用 GRPO 训练 Qwen 小模型学会调用工具 |
 
 详见 [learning_roadmap.md](./learning_roadmap.md)
+
+## How To Use
+- 学习：使用 `Jupyter`（详见 [setup_log.md](./setup_log.md#4-启动-jupyter每次使用前)）
+- 训练：`train.py`
+- 单元测试：`python -m pytest tests/ -v`

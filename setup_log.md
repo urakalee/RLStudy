@@ -5,9 +5,7 @@
 | 项目 | 说明 |
 |---|---|
 | 远程机器 | Mac Mini M4 16G（代码运行在这里） |
-| 本地机器 | Mac M1 Ultra 64G（浏览器访问） |
 | 连接方式 | 局域网 SSH（偶尔不稳定） |
-| 远程机器 IP | 192.168.31.163 |
 
 ---
 
@@ -65,7 +63,7 @@ http://127.0.0.1:8888/lab?token=xxxxxx...
 
 将 `127.0.0.1` 替换为远程机器局域网 IP：
 ```
-http://192.168.31.163:8888/lab?token=xxxxxx...
+http://xxx.x.x.x:8888/lab?token=xxxxxx...
 ```
 
 ---
@@ -77,6 +75,7 @@ http://192.168.31.163:8888/lab?token=xxxxxx...
 | 挂起 session（保持后台运行） | `Ctrl+B` 然后按 `D` |
 | 重新连接 session | `tmux attach -t rl` |
 | 查看所有 session | `tmux ls` |
+| kill session | `tmux kill-session -t rl` |
 
 ---
 
