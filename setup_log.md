@@ -93,3 +93,4 @@ http://192.168.31.163:8888/lab?token=xxxxxx...
 | trl | 0.29.1 | phase2 GRPO 训练 |
 | datasets | 4.8.3 | phase2 数据集 |
 | accelerate | 1.13.0 | trl 依赖 |
+| peft | 0.18.1 | phase2 LoRA 训练 |
