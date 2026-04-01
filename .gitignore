@@ -5,4 +5,11 @@ __pycache__/
 
 # 训练结果（checkpoints 目录不提交）
 phase1_gomoku/checkpoints/
+phase2_tooluse/checkpoints/
+
+# Jupyter checkpoints
+**/.ipynb_checkpoints/
+
+# IDE
+.idea/
 
