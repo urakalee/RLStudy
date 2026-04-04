@@ -50,6 +50,8 @@ python -m pytest tests/ -v
 
 新增或修改 notebook 时，所有代码 cell 必须在第一行加上 `# X-Y 简要描述` 的编号注释。
 
+Markdown cell 没有编号约定，沟通时直接说章节标题，如"第 5a 节"、"小结"。
+
 ## 调试原则
 
 **遇到与预期不一致的现象，先看日志/加 print，不要靠猜。**
